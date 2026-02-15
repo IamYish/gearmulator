@@ -1,0 +1,110 @@
+/* MPC Sampler Default Skin Stylesheet */
+
+body {
+	font-family: "Digital";
+	font-size: 14dp;
+	color: #e0e0e0;
+}
+
+#Root {
+	background-color: #1a1a2e;
+}
+
+/* Header area */
+#headerArea {
+	background-color: #16213e;
+	border-bottom: 2dp solid #0f3460;
+}
+
+#titleLabel {
+	font-size: 28dp;
+	font-weight: bold;
+	color: #e94560;
+	text-align: center;
+}
+
+#voiceCountLabel {
+	font-size: 16dp;
+	color: #a0a0a0;
+	text-align: center;
+}
+
+/* Pad grid area */
+#padGrid {
+	background-color: #0f0f23;
+	border: 2dp solid #1a1a3e;
+}
+
+/* Individual pad styling */
+.mpcPad {
+	background-color: #2a2a4a;
+	border: 2dp solid #3a3a6a;
+}
+
+.mpcPad:hover {
+	background-color: #3a3a5a;
+	border-color: #e94560;
+}
+
+.mpcPad:active {
+	background-color: #e94560;
+	border-color: #ff6b81;
+}
+
+/* Pad labels */
+.padLabel {
+	font-size: 18dp;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+
+.padNoteLabel {
+	font-size: 12dp;
+	color: #888888;
+	text-align: center;
+}
+
+/* Parameter area */
+#paramArea {
+	background-color: #16213e;
+	border-top: 2dp solid #0f3460;
+}
+
+.paramLabel {
+	font-size: 12dp;
+	color: #a0a0c0;
+	text-align: center;
+}
+
+/* Knob styling */
+.knob {
+}
+
+.knobSmall {
+}
+
+/* Master section */
+#masterSection {
+	background-color: #16213e;
+	border-left: 2dp solid #0f3460;
+}
+
+#masterLabel {
+	font-size: 16dp;
+	font-weight: bold;
+	color: #e94560;
+	text-align: center;
+}
+
+/* Info display */
+#infoDisplay {
+	background-color: #0a0a1a;
+	border: 1dp solid #2a2a4a;
+}
+
+#infoText {
+	font-size: 14dp;
+	color: #00ff88;
+	text-align: center;
+}

@@ -6,6 +6,7 @@ option(${CMAKE_PROJECT_NAME}_SYNTH_VAVRA "Build Vavra" on)
 option(${CMAKE_PROJECT_NAME}_SYNTH_XENIA "Build Xenia" on)
 option(${CMAKE_PROJECT_NAME}_SYNTH_NODALRED2X "Build NodalRed2x" on)
 option(${CMAKE_PROJECT_NAME}_SYNTH_JE8086 "Build JE-8086" on)
+option(${CMAKE_PROJECT_NAME}_SYNTH_MPCSAMPLER "Build MPC Sampler" on)
 
 # ----------------- Add our cmake scripts to IDE
 
@@ -144,3 +145,13 @@ add_subdirectory(nord)
 # ----------------- all ronaldos
 
 add_subdirectory(ronaldo)
+
+# ----------------- MPC Sampler
+
+if(${CMAKE_PROJECT_NAME}_SYNTH_MPCSAMPLER)
+	add_subdirectory(mpcSamplerLib EXCLUDE_FROM_ALL)
+
+	if(${CMAKE_PROJECT_NAME}_BUILD_JUCEPLUGIN)
+		add_subdirectory(mpcSamplerJucePlugin)
+	endif()
+endif()

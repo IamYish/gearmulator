@@ -1,0 +1,149 @@
+<rml>
+	<head>
+		<link type="text/template" href="tus_colorpicker.rml"/>
+		<link type="text/template" href="tus_patchmanager.rml"/>
+		<link type="text/rcss" href="tus_default.rcss"/>
+		<link type="text/rcss" href="tus_juceskin.rcss"/>
+		<link type="text/rcss" href="mpcDefault.rcss"/>
+	</head>
+	<body id="Root" rootScale="0.500000" style="left: 0dp; top: 0dp; width: 2400dp; height: 1600dp;">
+
+		<!-- Background -->
+		<div class="jucePos" style="left: 0dp; top: 0dp; width: 2400dp; height: 1600dp; background-color: #1a1a2e;"/>
+
+		<!-- Header -->
+		<div id="headerArea" class="jucePos" style="left: 0dp; top: 0dp; width: 2400dp; height: 100dp; background-color: #16213e;">
+			<div id="titleLabel" class="jucePos juceLabel" style="left: 50dp; top: 20dp; width: 500dp; height: 60dp; line-height: 60dp; font-size: 36dp; color: #e94560;">MPC SAMPLER</div>
+			<div id="voiceCountLabel" class="jucePos juceLabel" style="left: 1800dp; top: 30dp; width: 500dp; height: 40dp; line-height: 40dp; font-size: 20dp; color: #a0a0a0;">64 Voices</div>
+		</div>
+
+		<!-- Pad Grid: 4x4 layout (MPC-style, bottom-left is Pad 1) -->
+		<!-- Row 4 (top row): Pads 13-16 -->
+		<button id="pad13" class="jucePos juceButton mpcPad" style="left: 100dp; top: 150dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 13</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">C3</div>
+		</button>
+		<button id="pad14" class="jucePos juceButton mpcPad" style="left: 420dp; top: 150dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 14</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">C#3</div>
+		</button>
+		<button id="pad15" class="jucePos juceButton mpcPad" style="left: 740dp; top: 150dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 15</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">D3</div>
+		</button>
+		<button id="pad16" class="jucePos juceButton mpcPad" style="left: 1060dp; top: 150dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 16</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">D#3</div>
+		</button>
+
+		<!-- Row 3: Pads 9-12 -->
+		<button id="pad09" class="jucePos juceButton mpcPad" style="left: 100dp; top: 410dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 9</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">G#2</div>
+		</button>
+		<button id="pad10" class="jucePos juceButton mpcPad" style="left: 420dp; top: 410dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 10</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">A2</div>
+		</button>
+		<button id="pad11" class="jucePos juceButton mpcPad" style="left: 740dp; top: 410dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 11</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">A#2</div>
+		</button>
+		<button id="pad12" class="jucePos juceButton mpcPad" style="left: 1060dp; top: 410dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 12</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">B2</div>
+		</button>
+
+		<!-- Row 2: Pads 5-8 -->
+		<button id="pad05" class="jucePos juceButton mpcPad" style="left: 100dp; top: 670dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 5</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">E2</div>
+		</button>
+		<button id="pad06" class="jucePos juceButton mpcPad" style="left: 420dp; top: 670dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 6</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">F2</div>
+		</button>
+		<button id="pad07" class="jucePos juceButton mpcPad" style="left: 740dp; top: 670dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 7</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">F#2</div>
+		</button>
+		<button id="pad08" class="jucePos juceButton mpcPad" style="left: 1060dp; top: 670dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 8</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">G2</div>
+		</button>
+
+		<!-- Row 1 (bottom row): Pads 1-4 -->
+		<button id="pad01" class="jucePos juceButton mpcPad" style="left: 100dp; top: 930dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 1</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">C2</div>
+		</button>
+		<button id="pad02" class="jucePos juceButton mpcPad" style="left: 420dp; top: 930dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 2</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">C#2</div>
+		</button>
+		<button id="pad03" class="jucePos juceButton mpcPad" style="left: 740dp; top: 930dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 3</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">D2</div>
+		</button>
+		<button id="pad04" class="jucePos juceButton mpcPad" style="left: 1060dp; top: 930dp; width: 280dp; height: 220dp; background-color: #2a2a4a; border: 3dp solid #3a3a6a;">
+			<div class="padLabel jucePos juceLabel" style="left: 10dp; top: 10dp; width: 260dp; height: 40dp; line-height: 40dp; color: #ffffff;">PAD 4</div>
+			<div class="padNoteLabel jucePos juceLabel" style="left: 10dp; top: 170dp; width: 260dp; height: 30dp; line-height: 30dp; color: #888888;">D#2</div>
+		</button>
+
+		<!-- Right side: Master controls and pad parameters -->
+		<div id="masterSection" class="jucePos" style="left: 1440dp; top: 100dp; width: 900dp; height: 1400dp; background-color: #16213e;">
+
+			<!-- Master Volume -->
+			<div id="masterLabel" class="jucePos juceLabel" style="left: 20dp; top: 70dp; width: 860dp; height: 50dp; line-height: 50dp; font-size: 24dp; color: #e94560;">MASTER</div>
+			<knob id="masterVolume" class="jucePos juceRotary knob" data-model="partCurrent" param="MasterVolume" style="left: 350dp; top: 130dp; width: 160dp; height: 160dp;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 350dp; top: 290dp; width: 160dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">VOLUME</div>
+
+			<!-- Pad parameter section header -->
+			<div class="jucePos juceLabel" style="left: 20dp; top: 350dp; width: 860dp; height: 50dp; line-height: 50dp; font-size: 24dp; color: #e94560;">PAD PARAMETERS</div>
+
+			<!-- Row 1: Volume and Pan for Pad 1 (as example, bindable to selected pad) -->
+			<knob id="padVolume" class="jucePos juceRotary knob" data-model="partCurrent" param="Pad01Volume" style="left: 80dp; top: 430dp; width: 140dp; height: 140dp;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 80dp; top: 570dp; width: 140dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">VOLUME</div>
+
+			<knob id="padPan" class="jucePos juceRotary knob" data-model="partCurrent" param="Pad01Pan" style="left: 290dp; top: 430dp; width: 140dp; height: 140dp;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 290dp; top: 570dp; width: 140dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">PAN</div>
+
+			<knob id="padTune" class="jucePos juceRotary knob" data-model="partCurrent" param="Pad01Tune" style="left: 500dp; top: 430dp; width: 140dp; height: 140dp;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 500dp; top: 570dp; width: 140dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">TUNE</div>
+
+			<knob id="padMuteGroup" class="jucePos juceRotary knob" data-model="partCurrent" param="Pad01MuteGroup" style="left: 710dp; top: 430dp; width: 140dp; height: 140dp;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 710dp; top: 570dp; width: 140dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">MUTE GRP</div>
+
+			<!-- ADSR section -->
+			<div class="jucePos juceLabel" style="left: 20dp; top: 630dp; width: 860dp; height: 40dp; line-height: 40dp; font-size: 20dp; color: #e94560;">ENVELOPE</div>
+
+			<knob id="padAttack" class="jucePos juceRotary knob" data-model="partCurrent" param="Pad01Attack" style="left: 80dp; top: 690dp; width: 140dp; height: 140dp;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 80dp; top: 830dp; width: 140dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">ATTACK</div>
+
+			<knob id="padDecay" class="jucePos juceRotary knob" data-model="partCurrent" param="Pad01Decay" style="left: 290dp; top: 690dp; width: 140dp; height: 140dp;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 290dp; top: 830dp; width: 140dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">DECAY</div>
+
+			<knob id="padSustain" class="jucePos juceRotary knob" data-model="partCurrent" param="Pad01Sustain" style="left: 500dp; top: 690dp; width: 140dp; height: 140dp;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 500dp; top: 830dp; width: 140dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">SUSTAIN</div>
+
+			<knob id="padRelease" class="jucePos juceRotary knob" data-model="partCurrent" param="Pad01Release" style="left: 710dp; top: 690dp; width: 140dp; height: 140dp;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 710dp; top: 830dp; width: 140dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">RELEASE</div>
+
+			<!-- One-shot toggle -->
+			<button id="padOneShot" class="jucePos juceButton" data-model="partCurrent" isToggle="1" param="Pad01OneShot" style="left: 300dp; top: 900dp; width: 160dp; height: 60dp; background-color: #2a2a4a; border: 2dp solid #3a3a6a;"/>
+			<div class="jucePos juceLabel paramLabel" style="left: 300dp; top: 960dp; width: 160dp; height: 30dp; line-height: 30dp; color: #a0a0c0;">ONE SHOT</div>
+
+			<!-- Info display -->
+			<div id="infoDisplay" class="jucePos" style="left: 40dp; top: 1030dp; width: 820dp; height: 80dp; background-color: #0a0a1a; border: 1dp solid #2a2a4a;">
+				<div id="infoText" class="jucePos juceLabel" style="left: 10dp; top: 10dp; width: 800dp; height: 60dp; line-height: 60dp; font-size: 18dp; color: #00ff88;">MPC Sampler - 16 Pads - 64 Voices - VST3</div>
+			</div>
+
+		</div>
+
+		<!-- Bottom status bar -->
+		<div class="jucePos" style="left: 0dp; top: 1530dp; width: 2400dp; height: 70dp; background-color: #0f0f23;">
+			<div class="jucePos juceLabel" style="left: 50dp; top: 15dp; width: 600dp; height: 40dp; line-height: 40dp; font-size: 14dp; color: #505070;">MIDI Notes C2-D#3 | Velocity Sensitive | Mute Groups</div>
+		</div>
+
+	</body>
+</rml>
